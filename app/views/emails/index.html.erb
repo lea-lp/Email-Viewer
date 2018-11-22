@@ -1,23 +1,29 @@
 <div class="container">
 
-<h1>Email Viewer</h1><br>
+<h1 class="display-4"> 🐝 E-miel : fly for a better world</h1>
+<hr>
+<p>The sweetest mailbox : fluid like honey 🍯</p>
+
+<br>
 
   <div class="row">
 
-    <table class="table col-4">
+    <table class="table col-5">
         <thead>
-              <th scope="col">id</th>
-              <th scope="col">object</th>
+          <tr>
+            <th scope="col">id</th>
+            <th scope="col">object</th>
+          </tr>
           </thead>
       <% @all_emails.each do |mail| %>
-      <tbody>
+      <tbody class="thr">
             <th scope="row" id="<%= mail.id %>"><%= mail.id %></th>
             <td id="object_<%= mail.id %>"><%= link_to mail.object, email_path(mail.id), remote: true %></td>
         <% end %>
       </tbody>
     </table>
 
-    <table class="table col-6">
+    <table class="table col-6 offset-1">
         <thead>
             <tr>
                 <th scope="col">Email preview</th>

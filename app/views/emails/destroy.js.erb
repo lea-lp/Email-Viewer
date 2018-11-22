@@ -2,7 +2,7 @@
 
         let my_mail = $("<%= j (render 'emails/destroy-mail', email: @email) %>");
         $('#<%= @email.id %>').remove()
-        $('#object_<%= @email.id %>').remove()
+        $('#object_<%= @email.id %>').remove(alert("😭 Mail deleted 😭 "));
         
         $('#email-content').html(my_mail);
 

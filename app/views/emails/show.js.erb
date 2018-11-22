@@ -1,11 +1,5 @@
     $(document).ready(function(){
-
         let my_mail = $("<%= j (render 'emails/one-mail', email: @email) %>");
-        
+        $('#<%= @email.id %>, #object_<%= @email.id %>').css('background-color', 'white');
         $('#email-content').html(my_mail);
-
     });
-    
-
-    
-    
