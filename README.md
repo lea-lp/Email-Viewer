@@ -3,4 +3,4 @@
 > pair programming avec @Vano & @LeaLp
 
 ## Lien vers le site 
-https://to-do-list-the-app.herokuapp.com/
+https://email-viewer-bg.herokuapp.com/
