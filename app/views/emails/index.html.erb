@@ -1,0 +1,34 @@
+<div class="container">
+
+<h1>Email Viewer</h1><br>
+
+  <div class="row">
+
+    <table class="table col-4">
+        <thead>
+              <th scope="col">id</th>
+              <th scope="col">object</th>
+          </thead>
+      <% @all_emails.each do |mail| %>
+      <tbody>
+            <th scope="row" id="<%= mail.id %>"><%= mail.id %></th>
+            <td id="object_<%= mail.id %>"><%= link_to mail.object, email_path(mail.id), remote: true %></td>
+        <% end %>
+      </tbody>
+    </table>
+
+    <table class="table col-6">
+        <thead>
+            <tr>
+                <th scope="col">Email preview</th>
+                <hr>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td id="email-content"></td>
+            </tbody>
+    </table>
+
+  </div>
+</div>

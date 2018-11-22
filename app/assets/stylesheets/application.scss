@@ -1,0 +1,20 @@
+@import "variables/personal_variables";
+@import "variables/bootstrap_variables";
+
+@import "bootstrap";
+@import "font-awesome";
+@import "components/*";
+
+
+ .drop {
+    position: fixed;
+    right : 5px;
+    margin-right: 16px;
+    border: solid 2px grey;
+    width: 150px;
+ }
+
+ #carrousel {
+   margin: 0 auto;
+   padding: 50px;
+ }

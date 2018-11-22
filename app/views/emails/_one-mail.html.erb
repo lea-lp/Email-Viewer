@@ -1,0 +1,17 @@
+<br>
+
+<h2>Object : <%= email.object %></h2>
+
+<hr>
+<br>
+
+<p>Hey ! Check it out, the bests <strong>Rick and Morty </strong> quotes ;) Here's one for you. </p>
+<p>"<strong><%= email.body %></strong>"</p>
+<br>
+<p>Best regards, Léa</a></p>
+
+<br><br>
+
+<%= link_to email_delete_path, remote: true, :data => {:confirm => "You sure?", :method => "delete"} do %>
+<button type="button" class="btn btn-danger col-2">Delete</button>
+<% end %>

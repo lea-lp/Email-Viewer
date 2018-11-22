@@ -1,0 +1,9 @@
+    $(document).ready(function(){
+
+        let my_mail = $("<%= j (render 'emails/destroy-mail', email: @email) %>");
+        $('#<%= @email.id %>').remove()
+        $('#object_<%= @email.id %>').remove()
+        
+        $('#email-content').html(my_mail);
+
+    });
